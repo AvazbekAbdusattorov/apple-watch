@@ -1,0 +1,258 @@
+/* FONT FACE */
+@font-face {
+    font-family: ' Marvel Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: ' Marvel Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* GLOBAL STYLE CSS */
+:root{
+    --heading-color:#000;
+    --button-color:#666;
+    --btn-bg-color:#ea625c;
+    --link-color:#333;
+    --text-color:#777;
+    --color-bg:#fff;
+    --body-bg:#e7e7e7;
+}
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+    scroll-behavior: smooth;
+    background-color: #e7e7e7;
+}
+body{
+    height: 100%;
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';    
+    background-color:var(--color-bg);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container {
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main {
+    flex-grow: 1;
+}
+/*  SITE HEADER STYLES */
+
+.site-header {
+    padding: 30px 0;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.site-header__logo {
+    display: flex;
+    margin-right: 502px;
+}
+.site-header__logo-img {
+    display: block;
+}
+.site-header__nav {
+    margin-right: 40px;
+}
+.site-header__nav__item {
+    margin-right: auto;
+    display: flex;
+    align-items:center;
+    list-style-type: none;
+}
+.site-header__nav__item-list a{
+    padding: 6px 0  3px 0;
+    border-bottom: 3px solid transparent;
+    text-decoration: none;
+    color:var(--link-color);
+}
+.site-header__activ-link{
+    border-bottom:solid  3px var(--link-color) !important;
+}
+.site-header__nav__item-list:not(:last-child) {
+    margin-right: 30px;
+}
+.site-header__form {
+    width: 100%;
+    max-width: 153px;
+    display: inline-block;
+    border-bottom: 1px solid var(--button-color);
+}
+.site-header-form__input {
+    padding: 5px 0;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    line-height: 22.5px;
+}
+/* MAIN SECTION STYLES  */
+
+.hero-section {
+    background-color: #fff;
+    padding-top: 140.34px;
+    padding-bottom: 185px;
+    border-bottom: 2px solid #ddd ;
+    background-image: url("../image/apple-smart-watch.png");
+    background-repeat: no-repeat;
+    background-position: left calc(50% + 425px) bottom;
+}
+.global-text-wrapper {
+    width: 100%;
+    max-width: 490px;
+}
+.global-text-wrapper__title {
+    font-weight: 700;
+    line-height: 60px;
+    font-size: 50px;
+    color:var(--heading-color);
+    margin-bottom: 30px;
+    
+}
+.global-text-wrapper__text {
+    padding-left: 37px;
+    border-left: 3px solid #888;
+    color:var(--text-color);
+    margin-bottom: 30px;
+}
+.btn{
+    text-decoration: none;
+    padding-top:12px;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size:18px ;
+    line-height:27px ;
+    color:var(--color-bg);
+    background-color: var(--btn-bg-color);
+    display: inline-block;
+}
+.global-wrapper__btn {
+    padding-right: 38.5px;
+    padding-left: 38.5px;
+}
+
+/* FEATURES STYLES CSS */
+
+.features-section {
+    background-color: #fff;
+    padding-top: 68px;
+    padding-bottom: 70.7px;
+}
+.features-container-top{
+    display: flex;
+    margin-bottom: 140px;
+}
+.features-section__item {
+    width: 280px;
+}
+.features-section__item:not(:last-child){
+    margin-right: 80px;
+}
+.features-section__title {
+    font-weight: 700;
+    line-height: 27px;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.features-section__text {
+    font-size: 15px;
+    line-height: 24px;
+    color:var(--text-color);
+    margin-bottom: 20px;
+}
+.features-section_item_icon {
+    display: flex;
+    align-items:center;
+    width:8px ;
+    height: 8px;
+    background-color: #ddd;
+    box-shadow: 18px 0 0 #ddd,
+36px 0 0 #ddd;
+}
+.features-section__item_footer{
+    font-weight: 700;
+    font-size: 16px;
+    color:var(--btn-bg-color);
+    line-height: 25.6px;
+    display: flex;
+    align-items:center;
+}
+.features-section__item_footer__line{
+    width: 40px;
+    height: 3px;
+    background-color:var(--btn-bg-color);
+    border: 0;
+    margin-right: 10px;
+}
+/*   FEATURES BOTTOM STYLES*/
+
+.features-container-bottom {
+    display: flex;
+    align-items: center;
+}
+.features-container-bottom__img{
+    margin-left: 110px;
+}
+.global-wrapper-features__btn{
+    padding-right: 90px;
+    padding-left: 90px;
+}
+/* FOOTER STTYLES  */
+
+.site-footer {
+    padding: 240px 0;
+    background-image: url('../image/runners.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer-container{
+}
+.global-text-wrapper-footer{
+  float: right;
+}
+.global-wrapper-footer__btn{
+    padding-left: 46px;
+    padding-right: 46px;
+}
+.global-text-wrapper__title-footer{
+    --heading-color:#fff;
+    color:var(--heading-color);
+}
+.global-text-wrapper__text-footer {
+    --heading-color:#fff;
+    color:var(--heading-color);
+    border-color: var(--heading-color);
+}
+.global-wrapper-footer__btn {
+}
+.btn {
+}
